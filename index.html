@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taquin — Puzzle 15</title>
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+  <body class="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">Taquin</h1>
+
+    <taquin-hud></taquin-hud>
+    <div class="mb-4 flex gap-3">
+      <button
+        id="btn-catalog"
+        class="px-6 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+      >Elegir puzzle</button>
+      <button
+        id="btn-pause"
+        class="px-6 py-2 bg-gray-700 text-white rounded-lg font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-600 transition-colors"
+        disabled
+      >Pausar</button>
+    </div>
+    <taquin-board></taquin-board>
+    <taquin-catalog></taquin-catalog>
+    <taquin-modal></taquin-modal>
+
+    <script type="module" src="dist/js/main.js"></script>
+  </body>
+</html>
